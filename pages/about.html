@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Bespoke Quizzes and Games</title>
+  <meta name="description" content="About Tom — London-based quiz host, comedian, and Edinburgh Fringe performer." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-photo {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+    .about-text h2 { margin-bottom: 16px; }
+    .about-text p { margin-bottom: 18px; }
+    .cred-list {
+      list-style: none;
+      margin: 24px 0;
+    }
+    .cred-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .cred-list li:last-child { border-bottom: none; }
+    .cred-list li strong { color: var(--neon); margin-right: 8px; }
+    @media (max-width: 720px) {
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Bespoke<span> Quizzes & Games</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="company-events.html">Company Events</a></li>
+      <li><a href="parties.html">Private Parties</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="border-top:none;">
+  <div class="container">
+    <p class="eyebrow">About</p>
+    <h1>Hi, I'm Tom.</h1>
+    <div class="divider"></div>
+    <p style="max-width:580px; font-size:1.1rem;">I've been making quizzes for friends and family for years. The rounds people remember are always the ones about them. So I figured — why not turn that into a business?</p>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section>
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <img src="../photos/Photos/comeedy store.jpeg" alt="Tom performing at The Comedy Store" class="about-photo" />
+      </div>
+      <div class="about-text">
+        <p class="section-label">Background</p>
+        <h2>Quizmaster. Comedian. Genuinely prepared.</h2>
+        <div class="divider"></div>
+        <p>I started doing improv about 5 years ago, then stand-up, and somewhere along the way started hosting quizzes. I've performed at The Comedy Store and taken a comedy game show to the Edinburgh Fringe in 2025. All of that informs how I host.</p>
+        <p>The crowd management, the ability to read a room, knowing when to push the energy and when to let a moment breathe — you can't fake that. It either comes from experience or it doesn't.</p>
+        <p>I run every quiz myself. There's no team, no subcontracting. When you book me, you get me. And I show up with everything ready — slides locked, answer sheets printed, music loaded, kit packed. Nothing improvised on the night.</p>
+
+        <ul class="cred-list">
+          <li><strong>5 years</strong> performing improv comedy</li>
+          <li><strong>4 years</strong> stand-up, including The Comedy Store</li>
+          <li><strong>3 years</strong> hosting quizzes and games</li>
+          <li><strong>2025</strong> comedy game show at Edinburgh Fringe</li>
+          <li><strong>5.0 stars</strong> across all bookings to date</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip" style="margin: 0; border-radius: 0;">
+  <img src="../photos/Photos/IMG_0038.JPG" alt="Tom hosting a quiz" />
+  <img src="../photos/Photos/CAZTOMBURY_176_Original.JPG" alt="Quiz night in action" />
+  <img src="../photos/Photos/quiz santa.jpeg" alt="Christmas quiz" />
+</div>
+
+<!-- PHILOSOPHY -->
+<section>
+  <div class="container">
+    <p class="section-label">How I work</p>
+    <h2>The things I won't compromise on.</h2>
+    <div class="divider"></div>
+    <div class="card-grid card-grid-3" style="margin-top:12px;">
+      <div class="card">
+        <h3>A bespoke element, every time.</h3>
+        <p>Every booking gets rounds written specifically for that group. No copy-paste questions, no generic pub quiz banks. If I can't personalise it, I don't take the booking.</p>
+      </div>
+      <div class="card">
+        <h3>High energy from round one.</h3>
+        <p>Quizzes die when the host lets the energy drop in the first 10 minutes. I don't. The opening round is designed to get the room loud fast, and we hold it from there.</p>
+      </div>
+      <div class="card">
+        <h3>Paper sheets. Always.</h3>
+        <p>Physical answer sheets, transparent scoring, no apps. People don't have to stare at their phones. They talk to each other, argue about the answers, and actually have fun.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--bg-mid);">
+  <div class="container">
+    <p class="section-label">Book</p>
+    <h2>Let's make something memorable.</h2>
+    <div class="divider"></div>
+    <p style="max-width:500px; margin-bottom:32px;">Tell me about your event. I'll come back with a quote and some ideas for the rounds within 24 hours.</p>
+    <div class="btn-group">
+      <a href="contact.html" class="btn btn-primary">Send an enquiry</a>
+      <a href="fees.html" class="btn btn-outline">See pricing</a>
+    </div>
+    <p style="margin-top:20px; font-size:0.85rem; color:var(--muted);">Or email: <a href="mailto:bridgeeventsandmedia@gmail.com">bridgeeventsandmedia@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Bespoke Quizzes and Games</div>
+    <p>London-based quiz host. Available for corporate events, private parties, and weddings.</p>
+    <p style="margin-top:8px;"><a href="mailto:bridgeeventsandmedia@gmail.com">bridgeeventsandmedia@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+</script>
+</body>
+</html>

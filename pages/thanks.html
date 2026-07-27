@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanks — Bespoke Quizzes and Games</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Bespoke<span> Quizzes & Games</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="company-events.html">Company Events</a></li>
+      <li><a href="parties.html">Private Parties</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<section class="page-hero" style="border-top:none; text-align:center;">
+  <div class="container">
+    <p class="eyebrow">Enquiry sent</p>
+    <h1>Thanks — I'll be in touch.</h1>
+    <div class="divider"></div>
+    <p style="max-width:480px; margin: 0 auto 32px; font-size:1.1rem;">Got your message. I'll come back with a quote and some ideas — usually same day.</p>
+    <a href="../index.html" class="btn btn-primary">Back to home</a>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Bespoke Quizzes and Games</div>
+    <p>London-based quiz host. Available for company events, private parties, and weddings.</p>
+    <p style="margin-top:8px;"><a href="mailto:bridgeeventsandmedia@gmail.com">bridgeeventsandmedia@gmail.com</a></p>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+</script>
+</body>
+</html>
