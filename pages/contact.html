@@ -120,9 +120,10 @@
   </div>
 </nav>
 
-<!-- PAGE HERO -->
-<section class="page-hero" style="border-top:none;">
-  <div class="container">
+<!-- PAGE HERO with dark background image -->
+<section class="page-hero page-hero-bg" style="border-top:none; background-image: url('../photos/caztombury-308.jpg');">
+  <div class="page-hero-overlay"></div>
+  <div class="container" style="position:relative; z-index:2;">
     <p class="eyebrow">Get in touch</p>
     <h1>Let's sort your quiz.</h1>
     <div class="divider"></div>
@@ -164,10 +165,7 @@
     <div class="divider"></div>
     <p style="max-width:520px; margin-bottom:28px; color: var(--muted);">Fill in the details below and I'll get back to you within 24 hours.</p>
 
-    <form class="inquiry-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/pages/thanks.html">
-      <input type="hidden" name="form-name" value="enquiry" />
-      <p style="display:none;"><input name="bot-field" /></p>
-
+    <form class="inquiry-form" action="mailto:bridgeeventsandmedia@gmail.com" method="post" enctype="text/plain">
       <div class="form-row">
         <div class="form-group">
           <label for="name">Your name</label>
@@ -210,19 +208,12 @@
   const links = document.getElementById('navLinks');
   toggle.addEventListener('click', () => links.classList.toggle('open'));
 
-  // Build subject line from form fields on submit
-  document.querySelector('form').addEventListener('submit', function() {
+  // Set a useful email subject line before the mailto form opens the user's email client
+  document.querySelector('.inquiry-form').addEventListener('submit', function() {
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
     const date = document.getElementById('date').value;
-    let hidden = document.querySelector('input[name="subject"]');
-    if (!hidden) {
-      hidden = document.createElement('input');
-      hidden.type = 'hidden';
-      hidden.name = 'subject';
-      this.appendChild(hidden);
-    }
-    hidden.value = `Enquiry from ${name} (${email}) — ${date}`;
+    const subject = encodeURIComponent(`Quiz enquiry from ${name}${date ? ' — ' + date : ''}`);
+    this.action = `mailto:bridgeeventsandmedia@gmail.com?subject=${subject}`;
   });
 </script>
 </body>
