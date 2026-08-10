@@ -200,6 +200,14 @@ nav {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 28px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #212121;
+  border-color: var(--neon);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
 
 .card h3 { margin-bottom: 10px; }
@@ -308,6 +316,14 @@ nav {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  background: #212121;
+  border-color: var(--neon);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
 
 .stars { color: var(--neon); font-size: 1.1rem; margin-bottom: 12px; }
@@ -346,6 +362,14 @@ nav {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 32px 28px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-6px);
+  background: #212121;
+  border-color: var(--neon);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
 
 .price-card.featured {
@@ -551,7 +575,7 @@ nav {
 
 .price-tag-discuss {
   font-size: 1.8rem;
-  color: var(--muted);
+  color: var(--neon);
 }
 
 .page-hero .eyebrow {
