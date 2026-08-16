@@ -265,8 +265,7 @@ nav {
   height: 28px;
   width: auto;
   flex-shrink: 0;
-  filter: grayscale(1) brightness(2.5);
-  opacity: 0.5;
+  opacity: 0.9;
 }
 @keyframes scroll-logos {
   0%   { transform: translateX(0); }
