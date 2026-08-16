@@ -55,6 +55,39 @@ a:hover { text-decoration: underline; }
 section { padding: 80px 0; }
 section + section { border-top: 1px solid var(--border); }
 
+/* ── URGENCY BANNER ── */
+.urgency-banner {
+  background: var(--neon);
+  color: #000;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.urgency-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-urgency 28s linear infinite;
+}
+
+.urgency-item {
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  padding: 0 40px;
+}
+
+.urgency-banner a {
+  color: #000;
+  text-decoration: underline;
+}
+
+@keyframes scroll-urgency {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── NAV ── */
 nav {
   position: sticky;
