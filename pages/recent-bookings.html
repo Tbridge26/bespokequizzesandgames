@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recent Bookings — Bespoke Quizzes and Games</title>
+  <meta name="description" content="Recent bespoke quiz bookings in London: corporate Christmas parties, team-building events, and private birthday quizzes." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .booking-entry {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .booking-entry:first-of-type { padding-top: 0; }
+    .booking-entry:last-of-type { border-bottom: none; }
+    .booking-photo {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .booking-text h3 { margin: 6px 0 14px; }
+    .booking-quote {
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    @media (max-width: 720px) {
+      .booking-entry { grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Bespoke<span> Quizzes & Games</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="company-events.html">Company Events</a></li>
+      <li><a href="parties.html">Private Parties</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="recent-bookings.html" class="active">Recent Bookings</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="border-top:none;">
+  <div class="container">
+    <p class="eyebrow">Recent bookings</p>
+    <h1>What I've been hosting lately.</h1>
+    <div class="divider"></div>
+    <p style="max-width:580px; font-size:1.1rem;">A running log of recent quiz nights, corporate and private, across London. Real bookings, real groups, updated as I go.</p>
+  </div>
+</section>
+
+<!--
+  ============================================================
+  TEMPLATE — copy the block below for each new booking.
+  Add new entries at the TOP of the list (newest first).
+  Keep photos to 1-2 per booking, landscape works best.
+  Fill in: event type, client/company (or first name + initial
+  for private clients), month + year, 2-3 sentences on what
+  made it specific to that group, and a one-line quote if you
+  have one.
+  ============================================================
+
+  <div class="booking-entry">
+    <img src="../photos/YOUR-PHOTO.jpg" class="booking-photo" alt="Short description of the photo" />
+    <div class="booking-text">
+      <p class="section-label">Event type — Client/company name</p>
+      <h3>Short headline, Month Year</h3>
+      <p>2-3 sentences on the group, what was bespoke about it, and how it went.</p>
+      <p class="booking-quote">"Optional quote from the client." — Name.</p>
+    </div>
+  </div>
+-->
+
+<!-- BOOKINGS LIST -->
+<section>
+  <div class="container">
+
+    <div class="booking-entry">
+      <img src="../photos/titanbay1.jpg" class="booking-photo" alt="Titanbay team quiz on a riverside terrace" />
+      <div class="booking-text">
+        <p class="section-label">Corporate — summer social</p>
+        <h3>Titanbay riverside quiz, August 2026</h3>
+        <p>A summer social on a Thames-side terrace, complete with leis, cocktails, and a balloon round that closed the night out. Rounds were built around the Titanbay team and the office running jokes, standard format with the picture round getting the biggest reaction.</p>
+      </div>
+    </div>
+
+    <div class="booking-entry">
+      <img src="../photos/quiz-xmas.jpeg" class="booking-photo" alt="Christmas company quiz night" />
+      <div class="booking-text">
+        <p class="section-label">Corporate — Christmas party</p>
+        <h3>Company Christmas quiz, December 2025</h3>
+        <p>A festive quiz for a London company's Christmas do. Rounds built around the team's year, a themed picture round, and a Price is Right section using real office in-jokes. Everyone stayed on their feet through the whole thing.</p>
+        <p class="booking-quote">"Tom was a fantastic host who created a fun and engaging quiz. We really enjoyed the variety of rounds, and he kept everything running perfectly on time." — Chloe W.</p>
+      </div>
+    </div>
+
+    <div class="booking-entry">
+      <img src="../photos/caztombury-176.jpg" class="booking-photo" alt="60-person corporate quiz event" />
+      <div class="booking-text">
+        <p class="section-label">Corporate — company outing, 60+ people</p>
+        <h3>Large-group corporate quiz, September 2025</h3>
+        <p>A 60-plus attendee company outing, one of the bigger bookings so far. Format adjusted for the room size, teams tracked on a live scoreboard, and the brief was followed closely to keep the content tailored despite the scale.</p>
+        <p class="booking-quote">"All 60+ attendees thoroughly enjoyed the event. They listened to the brief and tailored the event accordingly. I would highly recommend Tom." — Caz C.</p>
+      </div>
+    </div>
+
+    <div class="booking-entry">
+      <img src="../photos/legoimage10.jpg" class="booking-photo" alt="LEGO team quiz night, prizes being presented" />
+      <div class="booking-text">
+        <p class="section-label">Corporate — team event</p>
+        <h3>LEGO team quiz night</h3>
+        <p>A corporate team quiz built around the group's own projects and running jokes, finishing with a prize round on stage. The kind of booking where the bespoke picture round gets the loudest reaction of the night.</p>
+      </div>
+    </div>
+
+    <div class="booking-entry">
+      <img src="../photos/quiz-pub.jpeg" class="booking-photo" alt="Work party quiz night" />
+      <div class="booking-text">
+        <p class="section-label">Corporate — work party</p>
+        <h3>Work party quiz, November 2025</h3>
+        <p>A bespoke quiz for a company work outing, written around the team and the occasion rather than off-the-shelf trivia. Standard format, full energy from round one.</p>
+        <p class="booking-quote">"Tom organised a bespoke quiz for our work outing, the whole evening was a success, everyone had a fantastic time thanks to his amazing quiz and great personality." — Alex T.</p>
+      </div>
+    </div>
+
+    <div class="booking-entry">
+      <img src="../photos/quiz-balloon.jpeg" class="booking-photo" alt="Birthday gameshow quiz night" />
+      <div class="booking-text">
+        <p class="section-label">Private — birthday gameshow</p>
+        <h3>Birthday gameshow quiz, October 2025</h3>
+        <p>A private birthday booking built as a full gameshow evening rather than a standard quiz: picture round, Price is Right, and a balloon-bursting finish. Built entirely around the guest of honour and their friends.</p>
+        <p class="booking-quote">"Wow Tom was top notch, made a bespoke quiz for me and my friends and was so different to all the standard quizzes. Will definitely recommend to anyone looking for a fun event." — Archie C.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--bg-mid);">
+  <div class="container">
+    <p class="section-label">Book</p>
+    <h2>Want your event on this list?</h2>
+    <div class="divider"></div>
+    <p style="max-width:500px; margin-bottom:32px;">Tell me about your event. I'll come back with a quote and some ideas for the rounds within 24 hours.</p>
+    <div class="btn-group">
+      <a href="contact.html" class="btn btn-primary">Send an enquiry</a>
+      <a href="fees.html" class="btn btn-outline">See pricing</a>
+    </div>
+    <p style="margin-top:20px; font-size:0.85rem; color:var(--muted);">Or email: <a href="mailto:bridgeeventsandmedia@gmail.com">bridgeeventsandmedia@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Bespoke Quizzes and Games</div>
+    <p>London-based quiz host. Available for corporate events, private parties, and weddings.</p>
+    <p style="margin-top:8px;"><a href="mailto:bridgeeventsandmedia@gmail.com">bridgeeventsandmedia@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+</script>
+</body>
+</html>
