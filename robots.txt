@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bespokequizzesandgames.com/sitemap.xml
