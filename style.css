@@ -265,9 +265,9 @@ nav {
 
 /* ── CLIENTS BANNER ── */
 .clients-banner {
-  background: var(--bg-mid);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: #dcdcdc;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
   padding: 16px 24px;
   display: flex;
   align-items: center;
@@ -279,7 +279,7 @@ nav {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #444;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -555,9 +555,9 @@ nav {
 
 /* ── CLIENTS STATIC (company events page) ── */
 .clients-static {
-  background: var(--bg-mid);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: #dcdcdc;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
   padding: 20px 40px;
   display: flex;
   align-items: center;
@@ -594,6 +594,13 @@ nav {
 /* ── LEGO logo larger ── */
 .client-logo-lego {
   height: 112px !important;
+}
+
+/* ── Enfuse logo (has its own colour background block) ── */
+.client-logo-enfuse {
+  height: 34px !important;
+  border-radius: 4px;
+  opacity: 1 !important;
 }
 
 /* ── THREE COLUMN PRICING ── */
