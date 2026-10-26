@@ -225,7 +225,8 @@ nav {
   gap: 24px;
 }
 
-.card-grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 720px) { .card-grid-2 { grid-template-columns: 1fr; } }
 .card-grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 .card {
@@ -576,6 +577,7 @@ nav {
 .card-emoji {
   position: relative;
 }
+.card-emoji h3 { padding-right: 40px; }
 
 .card-emoji-icon {
   position: absolute;
