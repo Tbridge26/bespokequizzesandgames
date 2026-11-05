@@ -267,12 +267,11 @@
   const links = document.getElementById('navLinks');
   toggle.addEventListener('click', () => links.classList.toggle('open'));
 
-  // Set a useful email subject line before the mailto form opens the user's email client
+  // Set a useful subject line on the FormSubmit email (form still posts to FormSubmit)
   document.querySelector('.inquiry-form').addEventListener('submit', function() {
     const name = document.getElementById('name').value;
     const date = document.getElementById('date').value;
-    const subject = encodeURIComponent(`Quiz enquiry from ${name}${date ? ' — ' + date : ''}`);
-    this.action = `mailto:tom@bespokequizzesandgames.com?subject=${subject}`;
+    this.querySelector('input[name="_subject"]').value = `Quiz enquiry from ${name}${date ? ' — ' + date : ''}`;
   });
 </script>
 </body>
